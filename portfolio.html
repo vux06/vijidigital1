@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Viji Digital Studio</title>
+    <meta name="description" content="View our portfolio of wedding photography, event videography, drone footage, and live streaming projects.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Viji Digital Studio</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Explore our collection of memorable moments and professional work</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="wedding">Wedding Photography</button>
+                <button class="filter-btn" data-filter="event">Event Videography</button>
+                <button class="filter-btn" data-filter="drone">Drone Footage</button>
+                <button class="filter-btn" data-filter="streaming">Live Streaming</button>
+                <button class="filter-btn" data-filter="printing">Flex Printing</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Wedding Photography -->
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/gbfa68cb1455bb1d7cf241776df48a31ec901bcb496fd3c33a158063fb350a0db216229ae978e962493473ed33df9047137bdb5499ec00a0477063c4d46243f5e_1280.jpg" alt="Wedding Photography 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Romantic Garden Wedding</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/gbccc268769971dd1c48d353ad2671e990cf066516c8f3af1ed7ed112de301b0335b5cfedbac71a22c5b9f82f1bafd09d14d07dfe69f92981b0f71f204ccaab15_1280.jpg" alt="Wedding Photography 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Elegant Ballroom Celebration</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g696442b5a4885971b346ee90acb9b763adc3961245f22462eb6018ed55bec92c4199b3af5d83c902ceac481f19cb58120ba8091d0366ecba647a1ea036434eb4_1280.jpg" alt="Wedding Photography 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Beach Wedding Ceremony</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g4a63eba4c27451ed97795c79ded73779965cdfc6016b04caf0f4e95be0c5c08177ce5fd14cf67592775cd93e61893b07358afe064e33ca7a8771a4997c333ef6_1280.jpg" alt="Wedding Photography 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Vintage Style Wedding</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g60d422b2bb6f74ad1174ac3bbe83373c33aaf26597068eaa99ecf831ca573aef6d619a53e1dc1830990435a40b62593391ace78e46206f036b3898d299b63e63_1280.jpg" alt="Wedding Photography 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Outdoor Mountain Wedding</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g10494680cc17a66a2186be80d613651fc4d60f7cbf75400ceca5af028ac76e60aad35a16123d7c42317bb3b4b11f136392e4ac1eda711c8fa3cf04859630155e_1280.jpg" alt="Wedding Photography 6">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Traditional Church Wedding</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g20d3789f2cdb3dea36c6a38fc772ceb19f9a87112af420b76410e8b00d8da5be5c8bb0999a880dea6655e2ed4ead6a4d00917a637004fcad14b1b216b0fe3ce3_1280.jpg" alt="Wedding Photography 7">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Rustic Barn Wedding</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g4cc7effb8715b553e8b4e1bf90f7afb6b364a7f0081b97fc4480d1ea0acabae4670ebe60f73cbaf87af117e3664d45ad60cf90607b5b71d6dae0c673977d53a6_1280.jpg" alt="Wedding Photography 8">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Modern City Wedding</h3>
+                                <p>Wedding Photography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Videography -->
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g68756a78ea431dcbc83464e883258e1b6bc14178bd47a156886b1a25ed4c1bc3abc5279d65cd9095c25d77078915e556ef7097104c40be9ee4a7ff3f9d894627_1280.jpg" alt="Event Videography 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Corporate Conference</h3>
+                                <p>Event Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g1eeaf4e1f096e0a22d0b2b32db313c81c9682ab4009c7dc3f8db34b5fc26fbfd5925a2a3a9fdae702152839627214dc00d4b6d9f6325b07cb4fb6fcaf5523829_1280.jpg" alt="Event Videography 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Music Festival Coverage</h3>
+                                <p>Event Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g2efd4e4da33716e38e35532ce856dc853683ed03b37569875ff714a14af5909a8a51e8fe8eb0df09a0aa8762264991f207acbe619908d2e5a629cb76a52bbf33_1280.jpg" alt="Event Videography 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Graduation Ceremony</h3>
+                                <p>Event Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/ga0a3f19149de7181a5b5026260a0db1c16dcdd1d70250cb04f5f4fa69e42154dd15a176a276d14e61e0b1932be46cd120778b6dfda2246d47f65e5cae328b889_1280.jpg" alt="Event Videography 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Birthday Celebration</h3>
+                                <p>Event Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g23d9ac6ec9fb3bb7514faf4e005de261c4bf4f3becfd8923e88c2eb2f4d66d8b5a54fa91c6688f3a34afa2f88fa9ba29b26bb4dc3f1e4476c02e67059abeb180_1280.jpg" alt="Event Videography 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Product Launch Event</h3>
+                                <p>Event Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/gce69be92aefc20ff7a23901e6d8455ae074c5bdf26336b4235d6ce5038c4ec7c1fd0be83c6a2e35975e11bbd0ad3bed0fa9385510c3980efbf829640839fa629_1280.jpg" alt="Event Videography 6">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Cultural Festival</h3>
+                                <p>Event Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drone Footage -->
+                <div class="portfolio-item" data-category="drone">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g7d42735bf6f6d1ddd1c1e06fcbb8dbecbf584f8e6c3054601bbfc2b7fdefd110760801412bef5e538439318de80fbcbf0d390cf946a01e4f65841efecbe9c78d_1280.jpg" alt="Drone Footage 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Coastal Aerial View</h3>
+                                <p>Drone Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="drone">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g3809e606908f87079f047a868b59e63421d61f3bc3bdf65b69558f619d9269282e1c29993189b3b04393d55ba38d5bfceee64ee283158afafe715b00635f50c5_1280.jpg" alt="Drone Footage 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Mountain Landscape</h3>
+                                <p>Drone Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="drone">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g66a434b9f9ceaf004be092d7d61927e5d7233de033e4c34a9f0e5a31fb59e04d16de22e5d144e2e0f761c279225d91d3c6a29052ec8f27a0f97ec589af285eff_1280.jpg" alt="Drone Footage 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Urban Cityscape</h3>
+                                <p>Drone Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="drone">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/gd76c2113c0743a6e0158154a9c10bd6616b78f04ea9b1c51c4b9ac77cebd9145d6f793b5cc40e2d2e1a87852c3fc861fd8477cfe5c439bc5605a2d3e7ac86976_1280.jpg" alt="Drone Footage 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Forest Canopy View</h3>
+                                <p>Drone Videography</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Streaming -->
+                <div class="portfolio-item" data-category="streaming">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/gb997dcbde9f3496eb985aefa56049e08ad51241e9594eafbaafade9de5a3449badcba758dca9d9b3e1ec8ebe3f35c421d52e6941d9d942a19121b7bd09d5b6a4_1280.jpg" alt="Live Streaming 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Conference Live Stream</h3>
+                                <p>Live Streaming</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="streaming">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g45cd3163d1d36f450133984c792c549ea81b762dce830f80e4b70102df59fc9120527182973bec1481dcfae1ccfe27460dde38210698c43cd40b0272b0516d18_1280.jpg" alt="Live Streaming 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Musical Performance Stream</h3>
+                                <p>Live Streaming</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="streaming">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g8509555afaf67777e660ff0fa89f6ef4a86d937dd7ff5a2f9417032886066de3046fb868454b1f770836f9b586695f11fccbe869366846e57d909841cf543b50_1280.jpg" alt="Live Streaming 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Educational Webinar</h3>
+                                <p>Live Streaming</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flex Printing -->
+                <div class="portfolio-item" data-category="printing">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g1a17b5a8a5b7be88c12e3e39b4c99a4b4b4c4e72f5e7f2e5c8e4b4c4e72f5e7f2e5c8_1280.jpg" alt="Event Banner">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Wedding Reception Banner</h3>
+                                <p>Flex Printing</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="printing">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/gc24c7b2f93f5bf23d9e1e0d92eb2e64b3e51a39e8a57a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a3e5bb5c4a_1280.jpg" alt="Corporate Backdrop">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Corporate Event Backdrop</h3>
+                                <p>Flex Printing</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="printing">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/ga42b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4_1280.jpg" alt="Birthday Banner">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Birthday Celebration Banner</h3>
+                                <p>Flex Printing</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="printing">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g9e3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c_1280.jpg" alt="Festival Signage">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Festival Signage Package</h3>
+                                <p>Flex Printing</p>
+                                <button class="view-btn" onclick="openLightbox(this)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+                <p id="lightboxDescription"></p>
+            </div>
+            <button class="lightbox-prev" onclick="prevImage()">&#8249;</button>
+            <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Viji Digital Studio</h3>
+                    <p>Professional digital studio specializing in photography, videography, and live streaming services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Wedding Photography</li>
+                        <li>Event Videography</li>
+                        <li>Drone Services</li>
+                        <li>Live Streaming</li>
+                        <li>Flex Printing</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Creative Street<br>Digital City, DC 12345</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ vijidigital@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Viji Digital Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
